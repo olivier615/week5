@@ -1,0 +1,331 @@
+.admin{
+    .coursesSelect{
+        span{
+            margin-right: 8px;
+        }
+    }
+    table{
+        width: 100%;
+        font-size: $base-font-size;
+        line-height: 19px;
+        margin-bottom: 67px;
+        th{
+            border-bottom: 1px $font-gray solid;
+            font-weight: $fw-bold;
+            padding-bottom: 5px;
+        }
+        td{
+            padding-top: 15px;
+            padding-bottom: 12px;
+            border-bottom: 1px $border-gray solid;
+        }
+        .set-right{
+            text-align: right;
+        }
+    }
+
+    .idSet {
+        span{
+            color: $green;
+            font-size: 18px;
+            font-weight: 700;
+        }
+    }
+}
+
+.pageList{
+    display: flex;
+    justify-content: flex-end;
+    font-size:$base-font-size;
+    span{
+        font-size:$base-font-size;
+        color:$green;
+    }
+    li{
+        padding: 9px 10px;
+        border: 1px $green solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    li:hover{
+        background: $green;
+        color:#fff;
+        span{
+            color:#fff;
+        }
+    }
+    .active{
+        background: $green;
+        color:#fff;
+    }
+}
+
+.admirImg{
+    background: url(https://hexschool.github.io/webLayoutTraining1st/week5/emir.jpeg) center center;
+    background-size: cover;
+    width: 141px;
+    height: 141px;
+    margin-right: 24px;
+}
+
+.modal-content{
+    flex-direction: row;
+    padding: 32px;
+}
+
+.modal-body , .modal-header{
+    padding: 0;
+}
+.modal-header{
+    border: none;
+}
+
+.student-card{
+    h5{
+        font-size: $base-font-size;
+        color: $font-gray;
+        line-height: 19px;
+        margin-bottom: 8px;
+        
+    }
+    .student-card-role{
+        font-size: $base-font-size;
+        color: $font-gray;
+        line-height: 19px;
+    }
+    .student-card-name{
+        font-size: $base-font-size * 1.5;
+        color: $font-gray;
+        line-height: 29px;
+        margin-bottom: 8px;
+    }
+    .student-card-mail{
+        font-size: $sec-font-size;
+        color: $font-lightGray;
+        line-height: 17px;
+        margin-bottom: 20px;
+    }
+    .coursesSelect{
+        justify-content: space-between;
+    }
+    a{
+        color: $font-gray;
+    }
+}
+
+.card-body{
+    flex-direction: row;
+    border: none;
+    padding: 0;
+    justify-content: space-between;
+    margin-top: 36px;
+    a{
+        padding: 8px 32px;
+        border-radius: 2px;
+    }
+    .deactivate-btm{
+        border: 0.5px $red solid;
+        color: $red;
+    }
+    .edit-btm{
+        background-color: $green;
+        color:#fff;
+    }
+}
+
+.editCard{
+    flex-direction: column;
+    color: $font-gray;
+    h5{
+        font-size: $base-font-size * 1.5;
+        font-weight:$fw-bold ;
+        
+        
+    }
+    .modal-header{
+        border-bottom: $border-gray .5px solid;
+        padding-bottom: 32px;
+    }
+    .modal-body{
+        margin-top: 4px;
+        h6{
+            font-size:$base-font-size * 1.25;
+            font-weight:$fw-bold ;
+        }
+    }
+    form{
+        label{
+            font-size: $sec-font-size;
+            margin-bottom: 4px;
+        }
+        .formSet{
+            display: flex;
+            flex-direction: column;
+            margin-top: 16px;
+            input{
+                padding: 16px;
+                border: none;
+                background-color: $bg-gray;
+                color: $font-gray;
+            }
+        }
+    }
+    .accountBlock{
+        padding-bottom: 24px;
+        border-bottom: .5px solid #CED4DA;
+        
+    }
+    .verificationBlock{
+        margin-top: 24px;
+        padding-bottom: 24px;
+        border-bottom: .5px solid $border-gray;
+        a{
+            color: $border-gray;
+            border: solid 1px $border-gray;
+            display: block;
+            width: 100%;
+            padding: 16px 0;
+            text-align: center;
+            margin-top: 18px;
+        }
+    }
+
+    .verifiedState{
+        margin-top: 18px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .date{
+            font-size: $sec-font-size;
+        }
+    }
+    .verifiedConfirm{     
+        display: flex;
+        align-items: center;
+        font-size: $base-font-size;
+        span{
+            color:$green;
+            font-size: 20px;
+        }
+    }
+    .accessLevelBlock{
+        margin-top: 24px;
+        padding-bottom: 24px;
+        border-bottom: .5px solid $border-gray;
+    }
+    .levelSelect{
+        display: flex;
+        flex-direction: column;
+        label{
+            font-size:$base-font-size * 1.25;
+            font-weight:$fw-bold ;
+            margin-bottom: 24px;
+        }
+        select{
+            padding: 16px;
+        }
+    }
+    .customAccessBlock{
+        margin-top: 24px;
+        padding-bottom: 24px;
+        border-bottom: .5px solid $border-gray;
+        .customList{
+            margin-top: 16px;
+            li{
+                margin-bottom: 16px;
+                input{
+                    margin-right: 8px;
+                }
+            }
+        }
+    }
+    .deactivateAccountBlock{
+        margin-top: 24px;
+        padding-bottom: 24px;
+        border-bottom: .5px solid $border-gray;
+        .deactivateAccountState{
+            margin-top: 18px;
+            display: flex;
+            align-items: center;
+            color: $red;
+            span{
+                margin-right: 8px;
+            }
+        }
+        a{
+            color: $red;
+            border: solid .5px $red;
+            display: block;
+            width: 100%;
+            padding: 16px 0;
+            text-align: center;
+            margin-top: 18px;
+        }
+    }
+    .modal-footer{
+        .cancelBtn{
+            color:$green;
+            border: solid .5px $green;
+            padding: 8px 32px;
+        }
+        .updateBtn{
+            background-color: $green;
+            color: #fff;
+            padding: 8px 32px;
+        }
+    }
+}
+
+.coursesSelect{
+        color:$font-gray;
+}
+
+.verifiedState{
+    .date{
+        display: none;
+    }
+}
+.addNewOne{
+    .verifiedConfirm{
+        span{
+            color: $red;
+            margin-right: 8px;
+        }    
+    }
+    .verificationBlock{
+        a{
+            color: $green;
+        }
+    }
+    .customAccessBlock{
+        border: none;
+    }
+}
+
+.iconSide{
+    span:hover{
+        color:$green;
+        cursor: pointer;
+    }
+}
+
+table{
+    span:hover{
+        color:$green;
+        cursor: pointer;
+    }
+    tr:hover{
+        background-color:#F8F9FA ;
+        cursor: pointer;
+    }
+    span{
+        margin-left: 24px;
+    }
+}
+
+.titleSide{
+    a:hover{
+        color: $green;
+    }
+}

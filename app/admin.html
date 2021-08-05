@@ -1,0 +1,401 @@
+---
+title: admin
+layout: ./app/layout.ejs
+engine: ejs
+current: admin
+---
+
+<div class="admin">
+    <div class="pageNav">
+        <div class="titleSide">
+            <h2 class="subTitle">Admin</h2>
+            <a href="" class="coursesSelect" data-bs-toggle="modal" data-bs-target="#addNewOne">
+                <span class="material-icons">
+                    add
+                </span>
+                <p>Add New Admin</p>
+            </a>
+        </div>
+        <div class="iconSide">
+            <span class="material-icons">
+                search
+            </span>
+            <span class="material-icons">
+                notifications_active
+            </span>
+        </div>
+    </div>
+    <table>
+        <tbody>
+            <tr>
+                <th class="idSet">
+                    ID
+                    <span class="material-icons">
+                        arrow_downward
+                    </span>
+                </th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Verified</th>
+                <th></th>
+            </tr>
+            <tr data-bs-toggle="modal" data-bs-target="#studentCard">
+                <td>#1</td>
+                <td>Emir Wicks</td>
+                <td>emir.wicks@mail.com</td>
+                <td>Yes</td>
+                <td class="set-right">
+                    <span class="material-icons">
+                        visibility
+                    </span>
+                    <span class="material-icons" data-bs-toggle="modal" data-bs-target="#editCard">
+                        edit
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td>#2</td>
+                <td>Zaina Goldsmith</td>
+                <td>zaina.goldsmith@mail.com</td>
+                <td>Yes</td>
+                <td class="set-right">
+                    <span class="material-icons">
+                        visibility
+                    </span>
+                    <span class="material-icons">
+                        edit
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td>#3</td>
+                <td>Mahima Lopez</td>
+                <td>mahima.lopez@mail.com</td>
+                <td>Yes</td>
+                <td class="set-right">
+                    <span class="material-icons">
+                        visibility
+                    </span>
+                    <span class="material-icons">
+                        edit
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td>#4</td>
+                <td>Pharrell Murray</td>
+                <td>pharrell.murray@mail.com</td>
+                <td>Yes</td>
+                <td class="set-right">
+                    <span class="material-icons">
+                        visibility
+                    </span>
+                    <span class="material-icons">
+                        edit
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td>#5</td>
+                <td>Annika Mcbride</td>
+                <td>annika.mcbride@mail.com</td>
+                <td>Yes</td>
+                <td class="set-right">
+                    <span class="material-icons">
+                        visibility
+                    </span>
+                    <span class="material-icons">
+                        edit
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td>#6</td>
+                <td>Fatimah Clark</td>
+                <td>fatimah.clark@mail.com</td>
+                <td>Yes</td>
+                <td class="set-right">
+                    <span class="material-icons">
+                        visibility
+                    </span>
+                    <span class="material-icons">
+                        edit
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td>#7</td>
+                <td>Klaudia Rhodes</td>
+                <td>klaudia.rhodes@mail.com</td>
+                <td>Yes</td>
+                <td class="set-right">
+                    <span class="material-icons">
+                        visibility
+                    </span>
+                    <span class="material-icons">
+                        edit
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td>#8</td>
+                <td>Tillie Lucero</td>
+                <td>tillie.lucero@mail.com</td>
+                <td>Yes</td>
+                <td class="set-right">
+                    <span class="material-icons">
+                        visibility
+                    </span>
+                    <span class="material-icons">
+                        edit
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td>#9</td>
+                <td>Sabrina Stephenson</td>
+                <td>sabrina.stephenson@mail.com</td>
+                <td>Yes</td>
+                <td class="set-right">
+                    <span class="material-icons">
+                        visibility
+                    </span>
+                    <span class="material-icons">
+                        edit
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td>#10</td>
+                <td>Annie Smith</td>
+                <td>annie.smith@mail.com</td>
+                <td>Yes</td>
+                <td class="set-right">
+                    <span class="material-icons">
+                        visibility
+                    </span>
+                    <span class="material-icons">
+                        edit
+                    </span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul class="pageList">
+        <li>
+            <span class="material-icons">
+                arrow_back_ios
+            </span>
+        </li>
+        <li class="active">1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>
+            <span class="material-icons">
+                arrow_forward_ios
+            </span>
+        </li>
+    </ul>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="studentCard" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content student-card">
+            <div class="admirImg"></div>
+            <div class="modal-body">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">#1</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <p class="student-card-role">Admin</p>
+                <p class="student-card-name">Emir Wicks</p>
+                <p class="student-card-mail">emir.wicks@mail.com</p>
+                <a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+                    aria-controls="collapseExample" class="coursesSelect">
+                    <p>Verified</p>
+                    <span class="material-icons">
+                        keyboard_arrow_down
+                    </span>
+                </a>
+
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                        <a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+                            aria-controls="collapseExample" class="deactivate-btm">Deactivate</a>
+                        <a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+                            aria-controls="collapseExample" class="edit-btm">Edit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- editCard Modal -->
+<div class="modal fade" id="editCard" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content editCard">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Edit Admin</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h6>Account</h6>
+                <div class="accountBlock">
+                    <form action="">
+                        <div class="formSet">
+                            <label for="Name">Name</label>
+                            <input type="text" name="Name" id="Name" placeholder="Emir Wicks" readonly>
+                        </div>
+                        <div class="formSet">
+                            <label for="Email">Email</label>
+                            <input type="text" name="Email" id="Email" placeholder="emir.wicks@mail.com" readonly>
+                        </div>
+                    </form>
+                </div>
+                <div class="verificationBlock">
+                    <h6>Verification</h6>
+                    <div class="verifiedState">
+                        <div class="verifiedConfirm">
+                            <span class="material-icons">
+                                check_circle
+                            </span>
+                            <p>Verified</p>
+                        </div>
+                        <div class="date">2020/4/12</div>
+                    </div>
+                    <a href="">Send Verification Mail</a>
+                </div>
+                <div class="accessLevelBlock">
+                    <div class="levelSelect">
+                        <label for="accessLevel">Access Level</label>
+                        <select name="" id="accessLevel">
+                            <option value="Admin">Admin</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="customAccessBlock">
+                    <h6>Custom Access</h6>
+                    <ul class="customList">
+                        <li>
+                            <input type="checkbox" id="custom1" name="custom1" value="Lecture">
+                            <label for="custom1">Lecture</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="custom2" name="custom2" value="Coupon">
+                            <label for="custom2">Coupon</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="custom3" name="custom3" value="Message">
+                            <label for="custom3">Message</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="custom4" name="custom4" value="Setting">
+                            <label for="custom4">Setting</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="custom5" name="custom5" value="Task Menu">
+                            <label for="custom5">Task Menu</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="deactivateAccountBlock">
+                    <h6>Deactivate Account</h6>
+                    <div class="deactivateAccountState">
+                        <span class="material-icons">
+                            report_problem
+                        </span>
+                        <p>This cannot be undone!</p>
+                    </div>
+                    <a href="">Deactivate This Account</a>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="" class="cancelBtn">Cancel</a>
+                <a href="" class="updateBtn">Update</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- addNewOne Modal -->
+<div class="modal fade" id="addNewOne" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content editCard addNewOne">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">New Admin</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h6>Account</h6>
+                <div class="accountBlock">
+                    <form action="">
+                        <div class="formSet">
+                            <label for="Name">Name</label>
+                            <input type="text" name="Name" id="Name" placeholder="">
+                        </div>
+                        <div class="formSet">
+                            <label for="Email">Email</label>
+                            <input type="text" name="Email" id="Email" placeholder="">
+                        </div>
+                    </form>
+                </div>
+                <div class="verificationBlock">
+                    <h6>Verification</h6>
+                    <div class="verifiedState">
+                        <div class="verifiedConfirm">
+                            <span class="material-icons">
+                                report_problem
+                            </span>
+                            <p>Unverified</p>
+                        </div>
+                        <div class="date">2020/4/12</div>
+                    </div>
+                    <a href="">Send Verification Mail</a>
+                </div>
+                <div class="accessLevelBlock">
+                    <div class="levelSelect">
+                        <label for="accessLevel">Access Level</label>
+                        <select name="" id="accessLevel">
+                            <option value="Admin">Admin</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="customAccessBlock">
+                    <h6>Custom Access</h6>
+                    <ul class="customList">
+                        <li>
+                            <input type="checkbox" id="custom1" name="custom1" value="Lecture">
+                            <label for="custom1">Lecture</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="custom2" name="custom2" value="Coupon">
+                            <label for="custom2">Coupon</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="custom3" name="custom3" value="Message">
+                            <label for="custom3">Message</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="custom4" name="custom4" value="Setting">
+                            <label for="custom4">Setting</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="custom5" name="custom5" value="Task Menu">
+                            <label for="custom5">Task Menu</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="" class="cancelBtn">Cancel</a>
+                <a href="" class="updateBtn">Add</a>
+            </div>
+        </div>
+    </div>
+</div>

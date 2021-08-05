@@ -1,0 +1,288 @@
+.pageNav{
+    margin-bottom: 44px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.titleSide{
+    display: flex;
+    align-items: flex-end;
+}
+.coursesSelect{
+    display: flex;
+    align-items: center;
+    font-size: $base-font-size;
+    font-weight: $fw-bold;
+    line-height: 19px;
+    span{
+        color: $green;
+        margin-left: 8px;
+    }
+}
+
+.subTitle{
+    font-size: $base-font-size * 1.5;
+    font-weight: $fw-bold;
+    margin-right: 48px;
+}
+
+.iconSide span{
+    margin-left: 16px;
+}
+
+.assignmentBlock{
+    display: flex;
+}
+
+.submitList{
+    width: 320px;
+    margin-right: 16px;
+    li{
+        border: $border-gray .5px solid;
+        padding: 12px;
+    }
+    .active{
+        background-color: $bg-gray;
+    }
+}
+
+.projectType , .projectInfo{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.projectType{
+    font-size: $base-font-size * 0.75;
+    line-height: 15px;
+    color: $font-gray;
+    margin-bottom: 4px;
+}
+.infoTitle{
+    font-size: $base-font-size;
+    color: $font-gray;
+    font-weight: 700;
+    line-height: 19px; 
+}
+.studentName{
+    font-size: $base-font-size * 0.75;
+    color: $font-lightGray;
+    line-height: 15px;
+}
+
+.promptMessage{
+    font-size: $base-font-size * 0.75;
+    color: $font-lightGray;
+    text-align: right;
+    margin-bottom: 8px;
+}
+
+.infoHead{
+    padding: 12px 16px;
+    border: $border-gray .5px solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .projectName{
+        margin-bottom: 4px;
+        font-size: $base-font-size * 0.75;
+    }
+}
+
+.infoContent{
+    padding: 16px 16px 0 16px;
+    border: $border-gray .5px solid;
+    .userThumbnail{
+        background: url(https://hexschool.github.io/webLayoutTraining1st/week5/emilywang.jpeg) center center;
+        @include thumbnail-size;
+    }
+    .user{
+        margin-left: 0;
+        margin-bottom: 16px;
+    }
+}
+
+.infoText{
+    font-size: $sec-font-size;
+    line-height: 20px;
+    padding-right: 16px;
+    padding-left: 56px;
+    a{
+        font-family: "Roboto Mono",sans-serif;
+        color: $green;
+        font-weight: 600;
+    }
+}
+
+.attachFile{
+    width: 176px;
+    height: 40px;
+    background-color: $bg-gray;
+    border: $border-gray .5px solid;
+    margin-top: 16px;
+    font-size: $base-font-size;
+    font-weight: $fw-bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    span{
+        margin-right: 8px;
+    }
+}
+
+.replyBox{
+    border: $border-gray .5px solid;
+    .replyControl{
+        display: flex;
+        padding: 18px 25px;
+        background-color: $bg-gray;
+        border: $border-gray .5px solid;
+        .fontSelect{
+            display: flex;
+            font-size: $base-font-size;
+            font-weight: $fw-bold;
+            align-items: center;
+            p{
+                margin-right: 8px;
+            }
+        }
+        .otherCantrol{
+            display: flex;
+            margin-left: 24px;
+            li{
+                margin-right: 24px;
+            }
+        }
+    }
+    textarea{
+        width: 100%;
+        border: $border-gray .5px solid;
+        border-bottom: none;
+        padding: 16px 24px;
+    }
+    label{
+        display: none;
+    }
+
+}
+
+.btnBlock{
+    margin:24px;
+    text-align: right;
+    .cencelBtn{
+        border: $green .5px solid;
+        color: $green;
+        padding: 8px 32px;
+        margin-right: 8px;
+        border-radius: 2px;
+    }
+    .replyBtn{
+        background-color: $green;
+        color: #fff;
+        padding: 8px 32px;
+        border-radius: 2px;
+    }
+}
+
+.replyedHead{
+    display: flex;
+    justify-content: space-between;
+    ul{
+        display: flex;
+        li{
+            margin-left: 24px;
+        }
+    }
+    .userThumbnail{
+        background: url(https://hexschool.github.io/webLayoutTraining1st/week5/andychen.jpeg) center center;
+        @include thumbnail-size;
+    }
+}
+.replyedInner{
+    padding-bottom: 24px;
+    .disk{
+        list-style: disc;
+    }
+    ul{
+        margin-left: 56px;
+    }
+    li{
+        font-size: $sec-font-size;
+        line-height: 20px;
+        padding-right: 16px;
+        a{
+            font-family: "Roboto Mono",sans-serif;
+            color: $green;
+            font-weight: 600;
+        }
+    }
+}
+
+.replyedFooter{
+    display: flex;
+    justify-content: space-between;
+    ul{
+        display: flex;
+        align-items: center;
+        li{
+            margin-right: 24px;
+        }
+    }
+    .btnBlock {
+        margin: 24px 0 24px 24px;
+        text-align: right;
+    }
+    
+}
+
+.attachFile{
+    margin-left: 56px;
+    :hover{
+        cursor: pointer;
+    }
+}
+
+.submitList{
+    li:hover{
+        background-color: #F8F9FA;
+        cursor: pointer;
+    }
+}
+
+.editList{
+    li:hover{
+        color: $green;
+        cursor: pointer;
+    }
+}
+
+.infoHead{
+    span:hover{
+        color: $green;
+        cursor: pointer;
+    }
+}
+
+.replyedFooter{
+    li:hover{
+        color: $green;
+        cursor: pointer;
+    }
+}
+
+.coursesSelect:hover{
+    color: $green;
+}
+
+.fontSelect:hover{
+        color: $green;
+        cursor: pointer;
+}
+.otherCantrol{
+    span:hover{
+        color: $green;
+        cursor: pointer;
+    }
+}

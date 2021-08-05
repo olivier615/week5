@@ -1,0 +1,172 @@
+---
+title: assignment
+layout: ./app/layout.ejs
+engine: ejs
+current: assignment
+---
+
+<div class="assignment">
+    <div class="pageNav">
+        <div class="titleSide">
+            <h2 class="subTitle">Assignment</h2>
+            <div class="coursesSelect">
+                <p>All Courses</p>
+                <span class="material-icons">
+                    keyboard_arrow_down
+                </span>
+            </div>
+        </div>
+        <div class="iconSide">
+            <span class="material-icons">
+                search
+            </span>
+            <span class="material-icons">
+                notifications_active
+            </span>
+        </div>
+    </div>
+    <div class="assignmentBlock">
+        <div class="submitSide">
+            <a href="" class="coursesSelect">
+                <p>All (4)</p>
+                <span class="material-icons">
+                    keyboard_arrow_down
+                </span>
+            </a>
+            <ul class="submitList">
+                <li class="active">
+                    <div class="projectType">
+                        <p class="projectName">Chapter Assignment 2</p>
+                        <p class="timeMark">4 hrs ago</p>
+                    </div>
+                    <div class="projectInfo">
+                        <h3 class="infoTitle">Please check this file…</h3>
+                        <p class="studentName">Emily Wang</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="projectType">
+                        <p class="projectName">Chapter Assignment 1</p>
+                        <p class="timeMark">12 hrs ago</p>
+                    </div>
+                    <div class="projectInfo">
+                        <h3 class="infoTitle">My Homework</h3>
+                        <p class="studentName">David Xu</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="projectType">
+                        <p class="projectName">Final Assignment</p>
+                        <p class="timeMark">18 hrs ago</p>
+                    </div>
+                    <div class="projectInfo">
+                        <h3 class="infoTitle">Have a problem with this…</h3>
+                        <p class="studentName">Tony Wei</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="projectType">
+                        <p class="projectName">Final Assignment</p>
+                        <p class="timeMark">19 hrs ago</p>
+                    </div>
+                    <div class="projectInfo">
+                        <h3 class="infoTitle">Did I do it right?</h3>
+                        <p class="studentName">Christina Lin</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="contentSide">
+            <p class="promptMessage">2 comments</p>
+            <div class="infoHead">
+                <div class="infoTitle">
+                    <p class="projectName">Chapter Assignment 2 / HTML&CSS</p>
+                    <p class="infoTitle">Please check this file for me, thanks!</p>
+                </div>
+                <span class="material-icons">
+                    menu
+                </span>
+            </div>
+            <div class="infoContent">
+                <div class="user">
+                    <div class="userThumbnail"></div>
+                    <div class="userInfo">
+                        <p class="userName">Emily Wang</p>
+                        <p class="userMail">10:38 AM (4 hours ago)</p>
+                    </div>
+                </div>
+                <p class="infoText">
+                    Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the
+                    following
+                    code the height of the <a href="">div</a> is bigger than the height of the <a href="">img</a> ? There is
+                    a gap
+                    below the image, but it doesn’t seems to be a padding/margin.
+                </p>
+                <p class="infoText">
+                    What is the gap or extra space below image?
+                </p>
+                <div class="attachFile">
+                    <span class="material-icons">
+                        attach_file
+                    </span>
+                    <p>HW-2-David.zip</p>
+                </div>
+                <hr>
+                <div class="replyed">
+                    <div class="replyedHead">
+                        <div class="user">
+                            <div class="userThumbnail"></div>
+                            <div class="userInfo">
+                                <p class="userName">Andy Chen (You)</p>
+                                <p class="userMail">13:24 AM (1 hours ago)</p>
+                            </div>
+                        </div>
+                        <ul class="editList">
+                            <li>
+                                <span class="material-icons">
+                                    star_border
+                                </span>
+                            </li>
+                            <li>
+                                <span class="material-icons">
+                                    edit
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="replyedInner">
+                        <p  class="infoText">Hi David, by default, an image is rendered inline, like a letter so it sits on the same line
+                            that a, b, c and d sit on. There is space below that line for the descenders you find on
+                            letters like g, j, p and q.</p>
+                        <p  class="infoText my24">You can:</p>
+                        <ul>
+                            <li class=" disk">
+                                adjust the <a href="">vertical-align</a> of the image to position it elsewhere (e.g. the <a href="">middle</a> ) or
+                            </li>
+                            <li class=" disk">
+                                change the <a href="">display</a> so it isn’t inline.
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <div class="replyedFooter">
+                <ul>
+                    <li>
+                        <span class="material-icons">
+                            keyboard_arrow_left
+                        </span>
+                    </li>
+                    <li>
+                        <span class="material-icons">
+                            keyboard_arrow_right
+                        </span>
+                    </li>
+                </ul>
+                <div class="btnBlock">
+                    <a href="" class="cencelBtn">Mark as read</a>
+                    <a href="./assignment-reply.html" class="replyBtn">Reply</a>
+                </div>
+            </div>
