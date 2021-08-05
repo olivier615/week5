@@ -1,0 +1,729 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* 圖片取代文字 */
+.content {
+  width: calc(100vw - 296px);
+  padding: 32px; }
+
+.my24 {
+  margin-top: 24px;
+  margin-bottom: 24px; }
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+img {
+  width: 100%;
+  height: auto; }
+
+body {
+  font-family: 'Lato', sans-serif; }
+
+.warp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 296px;
+  height: 100vh;
+  background-color: #F8F9FA;
+  padding: 32px 32px 32px 0; }
+  .header .logo {
+    background: url("https://hexschool.github.io/webLayoutTraining1st/week5/logo-ANSWER.svg");
+    text-indent: 110%;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    width: 151px;
+    height: 40px;
+    margin-left: 32px; }
+  .header .navList {
+    margin-top: 42px; }
+    .header .navList .active {
+      border-left: 4px solid #198754; }
+      .header .navList .active a {
+        color: #198754; }
+  .header li {
+    padding-left: 32px;
+    line-height: 32px;
+    margin-bottom: 24px; }
+    .header li a {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      font-size: 16px;
+      font-weight: 700;
+      color: #212529; }
+    .header li p {
+      margin-left: 18px; }
+
+.user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 32px; }
+  .user .userThumbnail {
+    background: url(https://hexschool.github.io/webLayoutTraining1st/week5/andychen.jpeg) center center;
+    background-size: cover;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px; }
+  .user .userInfo {
+    margin-left: 16px; }
+  .user .userName {
+    font-size: 16px;
+    font-weight: 700;
+    color: #212529;
+    margin-bottom: 4px; }
+  .user .userMail {
+    font-size: 14px;
+    color: #6C757D; }
+  .user :hover {
+    cursor: pointer; }
+
+.navList a:hover {
+  color: #198754; }
+
+.pageNav {
+  margin-bottom: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.titleSide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
+
+.coursesSelect {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px; }
+  .coursesSelect span {
+    color: #198754;
+    margin-left: 8px; }
+
+.subTitle {
+  font-size: 24px;
+  font-weight: 700;
+  margin-right: 48px; }
+
+.iconSide span {
+  margin-left: 16px; }
+
+.assignmentBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.submitList {
+  width: 320px;
+  margin-right: 16px; }
+  .submitList li {
+    border: #CED4DA 0.5px solid;
+    padding: 12px; }
+  .submitList .active {
+    background-color: #F8F9FA; }
+
+.projectType, .projectInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
+
+.projectType {
+  font-size: 12px;
+  line-height: 15px;
+  color: #212529;
+  margin-bottom: 4px; }
+
+.infoTitle {
+  font-size: 16px;
+  color: #212529;
+  font-weight: 700;
+  line-height: 19px; }
+
+.studentName {
+  font-size: 12px;
+  color: #6C757D;
+  line-height: 15px; }
+
+.promptMessage {
+  font-size: 12px;
+  color: #6C757D;
+  text-align: right;
+  margin-bottom: 8px; }
+
+.infoHead {
+  padding: 12px 16px;
+  border: #CED4DA 0.5px solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .infoHead .projectName {
+    margin-bottom: 4px;
+    font-size: 12px; }
+
+.infoContent {
+  padding: 16px 16px 0 16px;
+  border: #CED4DA 0.5px solid; }
+  .infoContent .userThumbnail {
+    background: url(https://hexschool.github.io/webLayoutTraining1st/week5/emilywang.jpeg) center center;
+    background-size: cover;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px; }
+  .infoContent .user {
+    margin-left: 0;
+    margin-bottom: 16px; }
+
+.infoText {
+  font-size: 14px;
+  line-height: 20px;
+  padding-right: 16px;
+  padding-left: 56px; }
+  .infoText a {
+    font-family: "Roboto Mono",sans-serif;
+    color: #198754;
+    font-weight: 600; }
+
+.attachFile {
+  width: 176px;
+  height: 40px;
+  background-color: #F8F9FA;
+  border: #CED4DA 0.5px solid;
+  margin-top: 16px;
+  font-size: 16px;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 2px; }
+  .attachFile span {
+    margin-right: 8px; }
+
+.replyBox {
+  border: #CED4DA 0.5px solid; }
+  .replyBox .replyControl {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 18px 25px;
+    background-color: #F8F9FA;
+    border: #CED4DA 0.5px solid; }
+    .replyBox .replyControl .fontSelect {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      font-size: 16px;
+      font-weight: 700;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .replyBox .replyControl .fontSelect p {
+        margin-right: 8px; }
+    .replyBox .replyControl .otherCantrol {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin-left: 24px; }
+      .replyBox .replyControl .otherCantrol li {
+        margin-right: 24px; }
+  .replyBox textarea {
+    width: 100%;
+    border: #CED4DA 0.5px solid;
+    border-bottom: none;
+    padding: 16px 24px; }
+  .replyBox label {
+    display: none; }
+
+.btnBlock {
+  margin: 24px;
+  text-align: right; }
+  .btnBlock .cencelBtn {
+    border: #198754 0.5px solid;
+    color: #198754;
+    padding: 8px 32px;
+    margin-right: 8px;
+    border-radius: 2px; }
+  .btnBlock .replyBtn {
+    background-color: #198754;
+    color: #fff;
+    padding: 8px 32px;
+    border-radius: 2px; }
+
+.replyedHead {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .replyedHead ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .replyedHead ul li {
+      margin-left: 24px; }
+  .replyedHead .userThumbnail {
+    background: url(https://hexschool.github.io/webLayoutTraining1st/week5/andychen.jpeg) center center;
+    background-size: cover;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px; }
+
+.replyedInner {
+  padding-bottom: 24px; }
+  .replyedInner .disk {
+    list-style: disc; }
+  .replyedInner ul {
+    margin-left: 56px; }
+  .replyedInner li {
+    font-size: 14px;
+    line-height: 20px;
+    padding-right: 16px; }
+    .replyedInner li a {
+      font-family: "Roboto Mono",sans-serif;
+      color: #198754;
+      font-weight: 600; }
+
+.replyedFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .replyedFooter ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .replyedFooter ul li {
+      margin-right: 24px; }
+  .replyedFooter .btnBlock {
+    margin: 24px 0 24px 24px;
+    text-align: right; }
+
+.attachFile {
+  margin-left: 56px; }
+  .attachFile :hover {
+    cursor: pointer; }
+
+.submitList li:hover {
+  background-color: #F8F9FA;
+  cursor: pointer; }
+
+.editList li:hover {
+  color: #198754;
+  cursor: pointer; }
+
+.infoHead span:hover {
+  color: #198754;
+  cursor: pointer; }
+
+.replyedFooter li:hover {
+  color: #198754;
+  cursor: pointer; }
+
+.coursesSelect:hover {
+  color: #198754; }
+
+.fontSelect:hover {
+  color: #198754;
+  cursor: pointer; }
+
+.otherCantrol span:hover {
+  color: #198754;
+  cursor: pointer; }
+
+.admin .coursesSelect span {
+  margin-right: 8px; }
+
+.admin table {
+  width: 100%;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 67px; }
+  .admin table th {
+    border-bottom: 1px #212529 solid;
+    font-weight: 700;
+    padding-bottom: 5px; }
+  .admin table td {
+    padding-top: 15px;
+    padding-bottom: 12px;
+    border-bottom: 1px #CED4DA solid; }
+  .admin table .set-right {
+    text-align: right; }
+
+.admin .idSet span {
+  color: #198754;
+  font-size: 18px;
+  font-weight: 700; }
+
+.pageList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-size: 16px; }
+  .pageList span {
+    font-size: 16px;
+    color: #198754; }
+  .pageList li {
+    padding: 9px 10px;
+    border: 1px #198754 solid;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .pageList li:hover {
+    background: #198754;
+    color: #fff; }
+    .pageList li:hover span {
+      color: #fff; }
+  .pageList .active {
+    background: #198754;
+    color: #fff; }
+
+.admirImg {
+  background: url(https://hexschool.github.io/webLayoutTraining1st/week5/emir.jpeg) center center;
+  background-size: cover;
+  width: 141px;
+  height: 141px;
+  margin-right: 24px; }
+
+.modal-content {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 32px; }
+
+.modal-body, .modal-header {
+  padding: 0; }
+
+.modal-header {
+  border: none; }
+
+.student-card h5 {
+  font-size: 16px;
+  color: #212529;
+  line-height: 19px;
+  margin-bottom: 8px; }
+
+.student-card .student-card-role {
+  font-size: 16px;
+  color: #212529;
+  line-height: 19px; }
+
+.student-card .student-card-name {
+  font-size: 24px;
+  color: #212529;
+  line-height: 29px;
+  margin-bottom: 8px; }
+
+.student-card .student-card-mail {
+  font-size: 14px;
+  color: #6C757D;
+  line-height: 17px;
+  margin-bottom: 20px; }
+
+.student-card .coursesSelect {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.student-card a {
+  color: #212529; }
+
+.card-body {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border: none;
+  padding: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 36px; }
+  .card-body a {
+    padding: 8px 32px;
+    border-radius: 2px; }
+  .card-body .deactivate-btm {
+    border: 0.5px #DC3545 solid;
+    color: #DC3545; }
+  .card-body .edit-btm {
+    background-color: #198754;
+    color: #fff; }
+
+.editCard {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #212529; }
+  .editCard h5 {
+    font-size: 24px;
+    font-weight: 700; }
+  .editCard .modal-header {
+    border-bottom: #CED4DA 0.5px solid;
+    padding-bottom: 32px; }
+  .editCard .modal-body {
+    margin-top: 4px; }
+    .editCard .modal-body h6 {
+      font-size: 20px;
+      font-weight: 700; }
+  .editCard form label {
+    font-size: 14px;
+    margin-bottom: 4px; }
+  .editCard form .formSet {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 16px; }
+    .editCard form .formSet input {
+      padding: 16px;
+      border: none;
+      background-color: #F8F9FA;
+      color: #212529; }
+  .editCard .accountBlock {
+    padding-bottom: 24px;
+    border-bottom: .5px solid #CED4DA; }
+  .editCard .verificationBlock {
+    margin-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: 0.5px solid #CED4DA; }
+    .editCard .verificationBlock a {
+      color: #CED4DA;
+      border: solid 1px #CED4DA;
+      display: block;
+      width: 100%;
+      padding: 16px 0;
+      text-align: center;
+      margin-top: 18px; }
+  .editCard .verifiedState {
+    margin-top: 18px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .editCard .verifiedState .date {
+      font-size: 14px; }
+  .editCard .verifiedConfirm {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 16px; }
+    .editCard .verifiedConfirm span {
+      color: #198754;
+      font-size: 20px; }
+  .editCard .accessLevelBlock {
+    margin-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: 0.5px solid #CED4DA; }
+  .editCard .levelSelect {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .editCard .levelSelect label {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 24px; }
+    .editCard .levelSelect select {
+      padding: 16px; }
+  .editCard .customAccessBlock {
+    margin-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: 0.5px solid #CED4DA; }
+    .editCard .customAccessBlock .customList {
+      margin-top: 16px; }
+      .editCard .customAccessBlock .customList li {
+        margin-bottom: 16px; }
+        .editCard .customAccessBlock .customList li input {
+          margin-right: 8px; }
+  .editCard .deactivateAccountBlock {
+    margin-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: 0.5px solid #CED4DA; }
+    .editCard .deactivateAccountBlock .deactivateAccountState {
+      margin-top: 18px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      color: #DC3545; }
+      .editCard .deactivateAccountBlock .deactivateAccountState span {
+        margin-right: 8px; }
+    .editCard .deactivateAccountBlock a {
+      color: #DC3545;
+      border: solid 0.5px #DC3545;
+      display: block;
+      width: 100%;
+      padding: 16px 0;
+      text-align: center;
+      margin-top: 18px; }
+  .editCard .modal-footer .cancelBtn {
+    color: #198754;
+    border: solid 0.5px #198754;
+    padding: 8px 32px; }
+  .editCard .modal-footer .updateBtn {
+    background-color: #198754;
+    color: #fff;
+    padding: 8px 32px; }
+
+.coursesSelect {
+  color: #212529; }
+
+.verifiedState .date {
+  display: none; }
+
+.addNewOne .verifiedConfirm span {
+  color: #DC3545;
+  margin-right: 8px; }
+
+.addNewOne .verificationBlock a {
+  color: #198754; }
+
+.addNewOne .customAccessBlock {
+  border: none; }
+
+.iconSide span:hover {
+  color: #198754;
+  cursor: pointer; }
+
+table span:hover {
+  color: #198754;
+  cursor: pointer; }
+
+table tr:hover {
+  background-color: #F8F9FA;
+  cursor: pointer; }
+
+table span {
+  margin-left: 24px; }
+
+.titleSide a:hover {
+  color: #198754; }
+
+/*# sourceMappingURL=all.css.map */
